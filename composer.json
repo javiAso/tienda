@@ -1,0 +1,20 @@
+{
+
+    
+    "autoload":{
+    
+            "psr-4":{
+                "clases\\":"/var/www/descripcionOrdenadorPracticaJavierAso/clases"
+                
+    
+    }
+    
+    },
+    "require":{
+    
+        "smarty/smarty":"^3.1"
+    
+    }
+    
+    
+}
