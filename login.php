@@ -6,23 +6,10 @@ error_reporting(E_ALL);
 
 require "./vendor/autoload.php";
 
-
 $plantilla = new Smarty();
 
-//configuro ubicacion de dir plantillas
-//revisamos permisos
-//plantillas lectura
-//plantillas_c escritura
 $plantilla->template_dir = "./plantillas";
 $plantilla->compile_dir = "./plantillas_c";
-
-
-//El controlador
-//$num = rand(0, 100);
-//compartimos el valor para la vista
-//$plantilla->assign("numero", $num);
-//Cargamos la plantilla
-
 
 if (isset($_POST['usuario'])) {
 
@@ -34,7 +21,7 @@ if (isset($_POST['usuario'])) {
 
     if ($resultado == "Login correcto") {
 
-        //$plantilla->display("productos.tpl");
+
         session_start();
         $_SESSION['usuario'] = $_POST['usuario'];
         $_SESSION['password'] = $_POST['password'];

@@ -38,9 +38,6 @@ class DB {
         }
 
         return $con;
-
-        //Verificamos si ha habido algún error o nos hemos conectado
-        //Si es exactamente igual a cero es que no ha habido error
     }
 
     function controlAcceso($user, $pass) {

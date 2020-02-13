@@ -62,7 +62,21 @@
                 </div>
 
              
-           
+            <form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
+                
+                   <input name="cmd" type="hidden" value="_xclick" />          
+                   <input name="business" type="hidden" value="asoycia@hotmail.com" /> 
+                   <input name="shopping_url" type="hidden" value="http://javierasodwes.infenlaces.com/tienda/pagar.php" />
+                   <input name="currency_code" type="hidden" value="EUR" />
+                   <input name="return" type="hidden" value="http://javierasodwes.infenlaces.com/tienda/pagoRealizado.php" />
+                   <input name="notify_url" type="hidden" value="http://javierasodwes.infenlaces.com/tienda/paypal_ipn.php" />
+                   <input name="rm" type="hidden" value="2" />
+                   
+                   <input type="hidden" name="item_name" value="Compra de {$usuario}">
+                   <input type="hidden" name="amount" value="{$total + $total * 0.21}">
+                   <input type="image" src="http://www.paypal.com/es_ES/i/btn/x-click-but01.gif" border="0" name="submit" alt="Realice pagos con PayPal: es rápido, gratis y seguro">
+
+            </form>
            
 
             <div id="pie">
